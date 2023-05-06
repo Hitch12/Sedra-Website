@@ -1,0 +1,16 @@
+.nav-link{
+  color: rgb(201, 201, 201) !important;
+  font-family: 'Roboto', sans-serif ;
+  font-size: 16px;
+  font-weight: 300;
+  transition: 0.3s;
+}
+.active{
+  color: white !important;
+  font-weight: 400;
+
+}
+.navbar{
+  background: #00000045;
+  transition: 0.8s;
+}
