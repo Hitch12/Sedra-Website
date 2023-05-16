@@ -1,0 +1,129 @@
+
+<div class="backGroundImg" style="background-image: url(../../assets/1.jpg);"></div>
+<div class="productDetails">
+  <div class="container mt-4">
+
+
+    <div class="row gy-4 mb-5">
+      <div class="col-12">
+        <p-breadcrumb class="max-w-full" styleClass="border-0 border-bottom" [model]="items" [home]="home"></p-breadcrumb>
+      </div>
+      <div class="col-md-5">
+
+
+      <div class="rounded-3 shadow overflow-hidden">
+
+
+        <owl-carousel-o [options]="slider">
+          <ng-template carouselSlide id="1">
+            <!-- <p-image src="../../assets/271190670_1589031314787006_6979101378744972198_n.jpg"  imageClass="w-100" [preview]="true"></p-image> -->
+            <div class="imgSlider" style="background-image: url(../../assets/278331258_1654931304863673_8868738547193727018_n.jpg);"></div>
+
+          </ng-template>
+          <ng-template carouselSlide id="2">
+            <div class="imgSlider" style="background-image: url(../../assets/339418076_621540066655110_6612553038117038136_n.jpg);"></div>
+
+          </ng-template>
+          <ng-template carouselSlide id="3">
+            <div class="imgSlider" style="background-image: url(../../assets/279123683_1664034763953327_1892697871383421844_n.jpg);"></div>
+
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+
+
+      </div>
+      <div class="col-md-6 offset-md-1 mb-5">
+        <div class="productInfo">
+          <h2>Kunafa Marshmallow</h2>
+          <p>499 EG</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet pariatur laboriosam delectus iste harum repudiandae!</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="smeller-items" id="smeller-items">
+      <div class="container mb-5">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center my-5">
+              <h2 class="text-uppercase">Smaller Products</h2>
+            </div>
+          </div>
+          <div class="col-12">
+            <owl-carousel-o [options]="BestSellerOptions" class="">
+              <ng-template carouselSlide id="1">
+                <a routerLink="/prodactDetails">
+                  <div Class="card">
+                    <div class="">
+                      <img alt="Card" src="../../assets/279123683_1664034763953327_1892697871383421844_n.jpg" />
+                    </div>
+                    <div class="card-body">
+                      <h3>Kunafa Marshmallow</h3>
+                      <p class="text-muted">499 EG</p>
+                    </div>
+                    <div class="card-footer">
+                      <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                    </div>
+                  </div>
+                </a>
+              </ng-template>
+              <ng-template carouselSlide id="2">
+                <a routerLink="/prodactDetails">
+                  <div Class="card">
+                    <div class="">
+                      <img alt="Card" src="../../assets/340230750_954232556001605_8718699031013558628_n.jpg" />
+                    </div>
+                    <div class="card-body">
+                      <h3>Kunafa Marshmallow</h3>
+                      <p class="text-muted">499 EG</p>
+                    </div>
+                    <div class="card-footer">
+                      <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                    </div>
+                  </div>
+                </a>
+              </ng-template>
+              <ng-template carouselSlide id="3">
+                <a routerLink="/prodactDetails">
+                  <div Class="card">
+                    <div class="">
+                      <img alt="Card" src="../../assets/278092173_1654237874933016_53567324905945560_n.jpg" />
+                    </div>
+                    <div class="card-body">
+                      <h3>Kunafa Marshmallow</h3>
+                      <p class="text-muted">499 EG</p>
+                    </div>
+                    <div class="card-footer">
+                      <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                    </div>
+                  </div>
+                </a>
+              </ng-template>
+              <ng-template carouselSlide id="4">
+                <a routerLink="/prodactDetails">
+                  <div Class="card">
+                    <div class="">
+                      <img alt="Card" src="../../assets/278331258_1654931304863673_8868738547193727018_n.jpg" />
+                    </div>
+                    <div class="card-body">
+                      <h3>Kunafa Marshmallow</h3>
+                      <p class="text-muted">499 EG</p>
+                    </div>
+                    <div class="card-footer">
+                      <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                    </div>
+                  </div>
+                </a>
+              </ng-template>
+            </owl-carousel-o>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

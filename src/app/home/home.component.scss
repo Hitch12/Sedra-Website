@@ -12,14 +12,14 @@ body{
 
   overflow: hidden;
 }
-.main::after{
-  content: '';
+.layer{
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: #00000075;
+  background: #00000095;
+  z-index: 2;
 }
 .main-box{
   position: absolute;
@@ -28,6 +28,7 @@ body{
   left: 50%;
   text-align: center;
   transform: translate( -50% ,-50% );
+  z-index: 3;
 }
 .main-box h1{
   color: white;
@@ -37,14 +38,187 @@ body{
 }
 .main-box p{
   font-family: 'Bodoni Moda', serif;
+  font-size: 24px;
+  color: white;
 }
 
-.about{
-  height: 100vh;
+
+.BEST-SELLER{
   width: 100%;
 }
-
+.BEST-SELLER h2,
+.categories h2,
+.Branches h2,
+.product h2{
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 600;
+  margin: 35px 0px 25px;
+  font-size: 32px;
+}
+.card{
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-top: 2px;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+.card:hover {
+  margin-top: 0px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.18), 0 5px 5px rgba(0,0,0,0.15);
+}
+.card-body h3{
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0px;
+  margin-bottom: 5px;
+  color: #000;
+}
+.card-footer{
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.card-footer p{
+  transition: 0.3s;
+  color: #157432;
+}
+.card:hover .card-footer p{
+  margin-left: 5px;
+}
+.product .card-body h3{
+  font-weight: 600;
+  font-size: 20px;
+}
 .imgSlider{
-  aspect-ratio: calc(16 / 9) ;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+.imgSliderBranch{
+  background-position: center center;
+  background-size: cover;
+  height: 45vh;
+}
+.imgSliderCategories{
+  background-position: center center;
+  background-size: cover;
+  height: 75vh;
+}
+.layerCategories{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #00000085;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s;
+}
+// .layerCategories:hover .imgSliderCategories {
+//   background-size: 200% 150%;
+// }
+
+.layerCategories:hover{
+  cursor: pointer;
+  background: #00000050;
+}
+.layerBranch:hover{
+  cursor: pointer;
+  background: #00000025;
+}
+.layerCategories p{
+  font-size: 34px;
+  color: white;
+  font-family: 'Bodoni Moda', serif;
+}
+.layerBranch{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #00000050;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s;
+}
+.layerBranch p{
+  font-size: 34px;
+  color: white;
+  font-family: 'Bodoni Moda', serif;
+}
+.categories{
+  overflow: hidden;
+}
+// .mid-img{
+//   margin: 50px 0px 20px;
+//   background-image: url(../../assets/1.jpg);
+//   background-size: cover;
+//   background-position-y: 7%;
+//   background-position-x: center;
+//   width: 100%;
+//   height: 60vh;
+//   position: relative;
+// }
+// .mid-img::after{
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   right: 0;
+//   left: 0;
+//   background: #00000090;
+// }
+a{
+  text-decoration: none;
 }
 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .imgSliderCategories{
+    height: 50vh;
+  }
+  .imgSliderBranch{
+    height: 30vh;
+  }
+  .layerBranch p{
+    font-size: 24px;
+
+  }
+  .card-body h3{
+    font-size: 20px;
+  }
+  .main-box p{
+    font-size: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

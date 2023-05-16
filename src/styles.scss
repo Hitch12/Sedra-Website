@@ -2,3 +2,26 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+:root{
+  --main-Color: #157432;
+  --second-Color: #b9843c;
+  --main-font:'Bodoni Moda', serif;
+}
+.bg-main{
+  background: var(--main-Color);
+}
+.bg-second{
+  background: var(--second-Color);
+}
+.text-main{
+  color: var(--main-Color);
+}
+.text-main{
+  color: var(--second-Color);
+}
+.main-font{
+  font-family: var(--main-font);
+}
+

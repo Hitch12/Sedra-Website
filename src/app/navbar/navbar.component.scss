@@ -1,16 +1,128 @@
+.text-main{
+  color: #157432;///*
+}
+
+
+
 .nav-link{
-  color: rgb(201, 201, 201) !important;
+  color: white;
   font-family: 'Roboto', sans-serif ;
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 400 !important;
   transition: 0.3s;
 }
-.active{
-  color: white !important;
-  font-weight: 400;
+
+.nav-link:hover{
+  color: #157432 !important;
+  font-weight: 400 !important;
 
 }
 .navbar{
-  background: #00000045;
-  transition: 0.8s;
+  background: #00000025;
+  transition: 1s;
+  padding: 10px;
+  box-shadow: #00000050 0 0 80px 5px;
+}
+.btn-up{
+  z-index: 999;
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  padding: 10px;
+  background: #fff;
+  display: none;
+
+  transition: 0.7s;
+}
+#btn-up:hover{
+  background: #157432;
+}
+.fa-chevron-up{
+  color: #157432;
+  transition: 0.7s;
+}
+#btn-up:hover .fa-chevron-up{
+  color: #fff;
+}
+.navbar-brand{
+  position: absolute;
+}
+
+
+.dropdown-category,
+.dropdown-Branch{
+  background-color: rgba(0, 0, 0, 0.95);
+  border-radius: 8px;
+  padding: 10px 5px;
+  width: 200px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 9;
+  visibility: hidden;
+  top: 80%;
+}
+.dropdown-effect{
+  opacity: 1 ;
+  visibility: visible;
+  top: 150%;
+}
+.dropdown-category ul,
+.dropdown-Branch ul{
+  list-style: none;
+  padding: 0;
+}
+.dropdown-category ul li,
+.dropdown-Branch ul li{
+  margin: 0px 0px 0px;
+  transition: 0.2s;
+}
+.dropdown-category ul li:hover,
+.dropdown-Branch ul li:hover{
+  background: #157432;
+}
+
+.dropdown-category ul li a,
+.dropdown-Branch ul li a{
+  text-decoration: none;
+  color: white;
+  margin: 0px 0px;
+  padding: 10px;
+  display: block;
+  font-size: 16px;
+  transition: 0.2s;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar-brand{
+    position: static;
+  }
+  .nav-link{
+    padding: 15px 15px;
+  }
+  .navbar-nav{
+    background: #00000095;
+    border-radius: 8px;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

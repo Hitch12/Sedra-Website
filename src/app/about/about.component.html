@@ -1,0 +1,27 @@
+
+<div class="about">
+  <div class="container py-5">
+    <div class="text-center py-5 ">
+      <h2 class="mainText">About Us</h2>
+    </div>
+    <p-timeline [value]="events" align="alternate" styleClass="customized-timeline">
+      <ng-template pTemplate="marker" let-event>
+          <span class="custom-marker shadow-2 bg-transparent py-3" [style.backgroundColor]="event.color">
+              <i [ngClass]="event.icon" class="fs-5 p-3 main-bg rounded-circle"></i>
+          </span>
+      </ng-template>
+      <ng-template pTemplate="content" let-event>
+            <p-card [header]="event.status" [subheader]="event.date" styleClass="p-0 shadow " >
+              <img *ngIf="event.image" [src]="event.image" [alt]="event.name" width="100%" [class]="event.class + 'fadeBoxToLeft'" />
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate
+                    neque quas!
+                </p>
+                <button pButton label="Read more" class="p-button-text"></button>
+            </p-card>
+      </ng-template>
+    </p-timeline>
+
+  </div>
+</div>

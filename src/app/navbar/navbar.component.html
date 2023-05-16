@@ -1,22 +1,49 @@
 <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container position-relative py-2">
-    <a class="navbar-brand position-absolute" href="#">
-      <img src="../../assets/Sedra-Logo.ico" alt="Bootstrap" width="50" >
+  <div class="container position-relative">
+    <a class="navbar-brand" routerLink="/home">
+      <img src="../../assets/Sedra-Logo.ico" alt="SedraLogo" width="50" >
     </a>
 
     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fa-solid fa-bars shadow-lg  " style="color: #ffffff;"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="home">Home</a>
+          <a class="nav-link" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item position-relative nav-dropdown-category">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <div class="dropdown-category">
+            <ul class="">
+              <li><a class="item" routerLink="/category">Oriental</a></li>
+              <li><a class="item" routerLink="/category">Bekary</a></li>
+              <li><a class="item" routerLink="/category">Catering</a></li>
+              <li><a class="item" routerLink="/category">Hot Catering</a></li>
+              <li><a class="item" routerLink="/category">Imblage</a></li>
+              <li><a class="item" routerLink="/category">Ramadan</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item position-relative nav-dropdown-Branch">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Branches
+          </a>
+          <div class="dropdown-Branch">
+            <ul class="">
+              <li><a class="item" routerLink="/branch">AL Golf</a></li>
+              <li><a class="item" routerLink="/branch">Tahmo3</a></li>
+              <li><a class="item" routerLink="/branch">North Costa</a></li>
+            </ul>
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Branches</a>
+          <a class="nav-link" routerLink="/about">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Categories</a>
+          <a class="nav-link" routerLink="/about">Contact Us</a>
         </li>
       </ul>
       <!-- <form class="d-flex" role="search">
@@ -26,3 +53,6 @@
     </div>
   </div>
 </nav>
+<button class="btn-up btn shadow" id="btn-up">
+  <i class="fa-solid fa-chevron-up fa-2x m-0"></i>
+</button>

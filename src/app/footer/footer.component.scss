@@ -1,0 +1,85 @@
+footer{
+  width: 100%;
+  padding: 20px 0px;
+  background: var(--main-Color);
+}
+.links{
+  list-style: none;
+
+}
+.links li a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: 'Bodoni Moda', serif;
+}
+.links li{
+  transition: 0.5s;
+
+  padding: 10px 0px;
+}
+.links li:hover{
+  margin-left: 7px;
+}
+.socialIcons ul {
+  padding: 0px;
+  margin: 0px;
+}
+.socialIcons li {
+  list-style: none;
+  margin: 0px;
+}
+.socialIcons li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5 );
+  margin: 0px 5px;
+  color: #fff;
+  transition: 0.3s;
+  font-size: 18px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+.socialIcons li a:hover{
+  color: #b9843c;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.18), 0 5px 5px rgba(0,0,0,0.15);
+
+}
+footer h3{
+  color: white;
+  font-size: 20px;
+  font-family: 'Bodoni Moda', serif;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .img-col{
+    justify-content: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+

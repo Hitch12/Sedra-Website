@@ -1,30 +1,436 @@
 
+
+
+
 <div class="main" id="main">
-  <div class="main-box rounded-5 shadow-lg bg-black bg-opacity-50 p-5">
+  <div class="main-box rounded-5 shadow bg-black bg-opacity-50 p-5">
     <h1 class="text-uppercase mb-5">Sedra</h1>
-    <p class="fs-3 text-uppercase text-white">Meison De Qualite</p>
+    <p class="text-uppercase">Meison De Qualite</p>
   </div>
   <owl-carousel-o [options]="customOptions" >
     <ng-template carouselSlide id="1">
-      <div class="bg-black ">
-
-        <img src="../../assets/cho.jpg" class="w-100 imgSlider">
-      </div>
+      <div class="imgSlider" style="background-image: url(../../assets/cho.jpg);"></div>
     </ng-template>
     <ng-template carouselSlide id="2">
-      <img src="../../assets/336313757_235982958943437_4475206130047015328_n.jpg" class="w-100">
+      <div class="imgSlider" style="background-image: url(../../assets/slide3.jpg);"></div>
     </ng-template>
     <ng-template carouselSlide id="3">
-      <img src="../../assets/277354576_1643981229292014_3541488204232541790_n.jpg" class="w-100">
+      <div class="imgSlider" style="background-image: url(../../assets/slide2.jpg);"></div>
     </ng-template>
-  </owl-carousel-o>
 
+  </owl-carousel-o>
+  <div class="layer"></div>
 </div>
 
 
-<div class="about w-100" id="about">
-  <div class="container">
+<div class="BEST-SELLER" id="BEST-SELLER">
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center my-5">
+          <h2>BEST SELLER</h2>
+        </div>
+      </div>
+      <div class="col-12">
+        <owl-carousel-o [options]="BestSellerOptions" class="">
+          <ng-template carouselSlide id="1">
+            <a routerLink="/prodactDetails">
+              <div Class="card">
+                <div class="">
+                  <img alt="Card" src="../../assets/279123683_1664034763953327_1892697871383421844_n.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Kunafa Marshmallow</h3>
+                  <p class="text-muted">499 EG</p>
+                </div>
+                <div class="card-footer">
+                  <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+              </div>
+            </a>
+          </ng-template>
+          <ng-template carouselSlide id="2">
+            <a routerLink="/prodactDetails">
+              <div Class="card">
+                <div class="">
+                  <img alt="Card" src="../../assets/340230750_954232556001605_8718699031013558628_n.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Kunafa Marshmallow</h3>
+                  <p class="text-muted">499 EG</p>
+                </div>
+                <div class="card-footer">
+                  <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+              </div>
+            </a>
+          </ng-template>
+          <ng-template carouselSlide id="3">
+            <a routerLink="/prodactDetails">
+              <div Class="card">
+                <div class="">
+                  <img alt="Card" src="../../assets/278092173_1654237874933016_53567324905945560_n.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Kunafa Marshmallow</h3>
+                  <p class="text-muted">499 EG</p>
+                </div>
+                <div class="card-footer">
+                  <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+              </div>
+            </a>
+          </ng-template>
+          <ng-template carouselSlide id="4">
+            <a routerLink="/prodactDetails">
+              <div Class="card">
+                <div class="">
+                  <img alt="Card" src="../../assets/278331258_1654931304863673_8868738547193727018_n.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Kunafa Marshmallow</h3>
+                  <p class="text-muted">499 EG</p>
+                </div>
+                <div class="card-footer">
+                  <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+              </div>
+            </a>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
 
+    </div>
   </div>
+</div>
 
+
+<div class="categories" id="categories">
+  <div class="row">
+    <div class="col-12">
+      <div class="text-center my-5">
+        <h2 class="text-uppercase">Our Categories</h2>
+      </div>
+    </div>
+    <div class=".col-12">
+      <owl-carousel-o [options]="categoriesOptions">
+
+        <ng-template carouselSlide id="1">
+          <a routerLink="/category">
+            <div class="imgSliderCategories" style="background-image: url(../../assets/336140640_978874069941711_356357032925365231_n.jpg);"></div>
+            <div class="layerCategories">
+              <p>Oriental</p>
+            </div>
+          </a>
+        </ng-template>
+        <ng-template carouselSlide id="2">
+          <a routerLink="/category">
+            <div class="imgSliderCategories" style="background-image: url(../../assets/slide3.jpg);"></div>
+            <div class="layerCategories">
+              <p>Bekary</p>
+            </div>
+          </a>
+        </ng-template>
+        <ng-template carouselSlide id="3">
+          <a routerLink="/category">
+            <div class="imgSliderCategories" style="background-image: url(../../assets/cold.jpg);"></div>
+            <div class="layerCategories">
+              <p>Catering</p>
+            </div>
+          </a>
+        </ng-template>
+        <ng-template carouselSlide id="4">
+          <a routerLink="/category">
+            <div class="imgSliderCategories" style="background-image: url(../../assets/hot1.jpg);"></div>
+            <div class="layerCategories">
+              <p>Hot Catering</p>
+            </div>
+          </a>
+        </ng-template>
+        <ng-template carouselSlide id="5" class="">
+          <a routerLink="/category">
+            <div class="imgSliderCategories" style="background-image: url(../../assets/cho.jpg);"></div>
+            <div class="layerCategories">
+                <p>Imblage</p>
+            </div>
+          </a>
+        </ng-template>
+        <ng-template carouselSlide id="6">
+          <a routerLink="/category">
+            <div class="imgSliderCategories" style="background-image: url(../../assets/r.jpg);"></div>
+            <div class="layerCategories">
+              <p>Ramadan</p>
+            </div>
+          </a>
+        </ng-template>
+      </owl-carousel-o>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="mid-img" id="mid-img"></div> -->
+
+
+<div class="product" id="product">
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center my-5">
+          <h2 class="text-uppercase">our product</h2>
+        </div>
+      </div>
+      <div class="col-12">
+        <owl-carousel-o [options]="productOptions">
+          <ng-template carouselSlide id="1">
+            <a routerLink="/prodactDetails">
+              <div Class="card">
+                <div class="">
+                  <img alt="Card" src="../../assets/p1.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Kunafa Marshmallow</h3>
+                  <p class="text-muted">499 EG</p>
+                </div>
+                <div class="card-footer">
+                  <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+              </div>
+            </a>
+          </ng-template>
+          <ng-template carouselSlide id="2">
+            <a routerLink="/prodactDetails">
+              <div Class="card">
+                <div class="">
+                  <img alt="Card" src="../../assets/278092173_1654237874933016_53567324905945560_n.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Kunafa Marshmallow</h3>
+                  <p class="text-muted">499 EG</p>
+                </div>
+                <div class="card-footer">
+                  <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+              </div>
+            </a>
+          </ng-template>
+          <ng-template carouselSlide id="3">
+            <a routerLink="/prodactDetails">
+              <div Class="card">
+                <div class="">
+                  <img alt="Card" src="../../assets/p2.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Kunafa Marshmallow</h3>
+                  <p class="text-muted">499 EG</p>
+                </div>
+                <div class="card-footer">
+                  <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+              </div>
+            </a>
+          </ng-template>
+          <ng-template carouselSlide id="4">
+            <a routerLink="/prodactDetails">
+              <div Class="card">
+                <div class="">
+                  <img alt="Card" src="../../assets/p3.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Kunafa Marshmallow</h3>
+                  <p class="text-muted">499 EG</p>
+                </div>
+                <div class="card-footer">
+                  <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+              </div>
+            </a>
+          </ng-template>
+          <ng-template carouselSlide id="5">
+            <a routerLink="/prodactDetails">
+              <div Class="card">
+                <div class="">
+                  <img alt="Card" src="../../assets/p4.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Kunafa Marshmallow</h3>
+                  <p class="text-muted">499 EG</p>
+                </div>
+                <div class="card-footer">
+                  <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+              </div>
+            </a>
+          </ng-template>
+          <ng-template carouselSlide id="6">
+            <a routerLink="/prodactDetails">
+              <div Class="card">
+                <div class="">
+                  <img alt="Card" src="../../assets/p5.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Kunafa Marshmallow</h3>
+                  <p class="text-muted">499 EG</p>
+                </div>
+                <div class="card-footer">
+                  <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+              </div>
+            </a>
+          </ng-template>
+          <ng-template carouselSlide id="7">
+            <a routerLink="/prodactDetails">
+              <div Class="card">
+                <div class="">
+                  <img alt="Card" src="../../assets/p6.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Kunafa Marshmallow</h3>
+                  <p class="text-muted">499 EG</p>
+                </div>
+                <div class="card-footer">
+                  <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+              </div>
+            </a>
+          </ng-template>
+          <ng-template carouselSlide id="8">
+            <a routerLink="/prodactDetails">
+              <div Class="card">
+                <div class="">
+                  <img alt="Card" src="../../assets/p7.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Kunafa Marshmallow</h3>
+                  <p class="text-muted">499 EG</p>
+                </div>
+                <div class="card-footer">
+                  <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+              </div>
+            </a>
+          </ng-template>
+          <ng-template carouselSlide id="9">
+            <a routerLink="/prodactDetails">
+              <div Class="card">
+                <div class="">
+                  <img alt="Card" src="../../assets/p8.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Kunafa Marshmallow</h3>
+                  <p class="text-muted">499 EG</p>
+                </div>
+                <div class="card-footer">
+                  <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+              </div>
+            </a>
+          </ng-template>
+          <ng-template carouselSlide id="10">
+            <a routerLink="/prodactDetails">
+              <div Class="card">
+                <div class="">
+                  <img alt="Card" src="../../assets/cold.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Kunafa Marshmallow</h3>
+                  <p class="text-muted">499 EG</p>
+                </div>
+                <div class="card-footer">
+                  <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+              </div>
+            </a>
+          </ng-template>
+          <ng-template carouselSlide id="11">
+            <a routerLink="/prodactDetails">
+              <div Class="card">
+                <div class="">
+                  <img alt="Card" src="../../assets/278092173_1654237874933016_53567324905945560_n.jpg" />
+                </div>
+                <div class="card-body">
+                  <h3>Kunafa Marshmallow</h3>
+                  <p class="text-muted">499 EG</p>
+                </div>
+                <div class="card-footer">
+                  <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
+              </div>
+            </a>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="Branches" id="Branches">
+  <div class="pb-5 mb-5 overflow-hidden">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center my-5">
+          <h2 class="text-uppercase">Our Branches</h2>
+        </div>
+      </div>
+      <div class="col-12">
+
+        <owl-carousel-o [options]="BranchesOptions">
+          <ng-template carouselSlide id="1" class="position-relative p-0">
+              <owl-carousel-o [options]="slideBranch">
+                  <ng-template carouselSlide id="1">
+                    <div class="imgSliderBranch" style="background-image: url(../../assets/golf.jpeg);"></div>
+                  </ng-template>
+                  <ng-template carouselSlide id="2">
+                    <div class="imgSliderBranch" style="background-image: url(../../assets/golf1.jpg);"></div>
+                  </ng-template>
+                  <ng-template carouselSlide id="3">
+                    <div class="imgSliderBranch" style="background-image: url(../../assets/golf2.jpg);"></div>
+                  </ng-template>
+              </owl-carousel-o>
+              <div class="layerBranch">
+                <p id="branchName">El Golf</p>
+              </div>
+          </ng-template>
+          <ng-template carouselSlide id="2">
+            <owl-carousel-o [options]="slideBranch">
+              <ng-template carouselSlide id="1">
+                <div class="imgSliderBranch" style="background-image: url(../../assets/tagmo3-2.jpg);"></div>
+              </ng-template>
+              <ng-template carouselSlide id="2">
+                <div class="imgSliderBranch" style="background-image: url(../../assets/tagmo3-1.jpg);"></div>
+              </ng-template>
+              <ng-template carouselSlide id="3">
+                <div class="imgSliderBranch" style="background-image: url(../../assets/tagmo3.jpg);"></div>
+              </ng-template>
+          </owl-carousel-o>
+          <div class="layerBranch">
+            <p id="branchName">Al Tagam3</p>
+          </div>
+          </ng-template>
+          <ng-template carouselSlide id="3">
+            <owl-carousel-o [options]="slideBranch">
+              <ng-template carouselSlide id="1">
+                <div class="imgSliderBranch" style="background-image: url(../../assets/nor1.jpg);"></div>
+              </ng-template>
+              <ng-template carouselSlide id="2">
+                <div class="imgSliderBranch" style="background-image: url(../../assets/nor2.jpg);"></div>
+              </ng-template>
+              <ng-template carouselSlide id="3">
+                <div class="imgSliderBranch" style="background-image: url(../../assets/nor6.jpg);"></div>
+              </ng-template>
+            </owl-carousel-o>
+            <div class="layerBranch">
+              <p id="branchName">North Costa</p>
+            </div>
+          </ng-template>
+        </owl-carousel-o>
+
+
+
+      </div>
+    </div>
+  </div>
 </div>
