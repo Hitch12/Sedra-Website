@@ -1,55 +1,59 @@
 <div class="main" id="main">
-  <div class="main-box rounded-5 shadow bg-black bg-opacity-50 p-5">
-    <h1 class="text-uppercase mb-5">Sedra</h1>
-    <p class="text-uppercase">Meison De Qualite</p>
-  </div>
-  <owl-carousel-o [options]="customOptions" >
-    <ng-template carouselSlide id="1">
-      <div class="imgSlider" style="background-image: url(../../assets/cho.jpg);"></div>
-    </ng-template>
-    <ng-template carouselSlide id="2">
-      <div class="imgSlider" style="background-image: url(../../assets/slide3.jpg);"></div>
-    </ng-template>
-    <ng-template carouselSlide id="3">
-      <div class="imgSlider" style="background-image: url(../../assets/slide2.jpg);"></div>
-    </ng-template>
-
-  </owl-carousel-o>
-  <div class="layer"></div>
-</div>
-
-<div class="container">
-  <div class="mapouter">
-    <div class="gmap_canvas">
-      <iframe
-        width="100%"
-        height="100%"
-        id="gmap_canvas"
-        src="https://maps.google.com/maps?q=sedra ard El Golf &t=&z=17&ie=UTF8&iwloc=&output=embed"
-        frameborder="0"
-        scrolling="no"
-        marginheight="0"
-        marginwidth="0"
-      ></iframe>
-      <a href="https://2yu.co">2yu</a>
-      <br />
-      <style>
-        .mapouter {
-          position: relative;
-          text-align: right;
-          height: 100%;
-          width: 100%;
-        }
-      </style>
-      <a href="https://embedgooglemap.2yu.co/">html embed google map</a>
-      <style>
-        .gmap_canvas {
-          overflow: hidden;
-          background: none !important;
-          height: 50vh;
-          width: 50%;
-        }
-      </style>
+  <div class="main-box shadow">
+    <div class="">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            width="100%"
+            height="100%"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=sedra ard El Golf &t=&z=17&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+          <a href="https://2yu.co"></a>
+          <br />
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              height: 100%;
+              width: 100%;
+            }
+          </style>
+          <a href="https://embedgooglemap.2yu.co/"></a>
+          <style>
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 50vh;
+              width: 100%;
+              padding: 30px;
+              background: hsla(0, 0%, 0%, 0.50) !important;
+              border-radius: 8px;
+            }
+          </style>
+        </div>
+      </div>
     </div>
+
+  </div>
+  <div class="">
+    <owl-carousel-o [options]="customOptions" >
+      <ng-template carouselSlide id="1">
+        <div class="imgSlider" style="background-image: url(../../assets/golf.jpeg);"></div>
+      </ng-template>
+      <ng-template carouselSlide id="2">
+        <div class="imgSlider" style="background-image: url(../../assets/golf1.jpg);"></div>
+      </ng-template>
+      <ng-template carouselSlide id="3">
+        <div class="imgSlider" style="background-image: url(../../assets/golf2.jpg);"></div>
+      </ng-template>
+
+    </owl-carousel-o>
+    <div class="layer"></div>
   </div>
 </div>
+

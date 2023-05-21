@@ -16,7 +16,7 @@ body{
   bottom: 0;
   left: 0;
   right: 0;
-  background: #00000095;
+  background: #00000020;
   z-index: 2;
 }
 .main-box{
@@ -26,16 +26,22 @@ body{
   left: 50%;
   text-align: center;
   transform: translate( -50% ,-50% );
-  z-index: 3;
+  width: 50%;
+  height: 50vh;
 }
-.main-box h1{
-  color: white;
-  font-family: 'Bodoni Moda', serif;
-  font-weight: 500;
-  font-size: 72px;
-}
-.main-box p{
-  font-family: 'Bodoni Moda', serif;
-  font-size: 24px;
-  color: white;
+// .main-box h1{
+//   color: white;
+//   font-family: 'Bodoni Moda', serif;
+//   font-weight: 500;
+//   font-size: 72px;
+// }
+// .main-box p{
+//   font-family: 'Bodoni Moda', serif;
+//   font-size: 24px;
+//   color: white;
+// }
+.imgSlider{
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
 }

@@ -1,27 +1,170 @@
 
+
+<app-navbar></app-navbar>
+
 <div class="about">
-  <div class="container py-5">
+  <div class="backGroundImg" style="background-image: url(../../assets/3.jpg);">
     <div class="text-center py-5 ">
-      <h2 class="mainText">About Us</h2>
+      <h2 class="title">About Us</h2>
     </div>
-    <p-timeline [value]="events" align="alternate" styleClass="customized-timeline">
-      <ng-template pTemplate="marker" let-event>
-          <span class="custom-marker shadow-2 bg-transparent py-3" [style.backgroundColor]="event.color">
-              <i [ngClass]="event.icon" class="fs-5 p-3 main-bg rounded-circle"></i>
-          </span>
-      </ng-template>
-      <ng-template pTemplate="content" let-event>
-            <p-card [header]="event.status" [subheader]="event.date" styleClass="p-0 shadow " >
-              <img *ngIf="event.image" [src]="event.image" [alt]="event.name" width="100%" [class]="event.class + 'fadeBoxToLeft'" />
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate
-                    neque quas!
-                </p>
-                <button pButton label="Read more" class="p-button-text"></button>
-            </p-card>
-      </ng-template>
-    </p-timeline>
-
   </div>
+
+
+    <div class="branches">
+      <div class="container py-5">
+        <h2 class="main-text fs-3 text-white">Where Owr Branches ?</h2>
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <div class="card item1-fadeOut" id="item1">
+              <div class="img-card ">
+                <div class="imgSliderBranch" style="background-image: url(../../assets/golf.jpeg);"></div>
+              </div>
+              <div class="layerBranch">
+                <p id="branchName" class="main-text fs-3 text-white mb-5">Sedra - Ard El Golf</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card item2-fadeOut" id="item2">
+              <div class="img-card ">
+                <div class="imgSliderBranch" style="background-image: url(../../assets/tagmo3-2.jpg);"></div>
+              </div>
+              <div class="layerBranch">
+                <p id="branchName" class="main-text fs-3 text-white">Sedra - El Tagmoa</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card item3-fadeOut" id="item3">
+              <div class="img-card ">
+                <div class="imgSliderBranch" style="background-image: url(../../assets/nor2.jpg);"></div>
+              </div>
+              <div class="layerBranch">
+                <p id="branchName" class="main-text fs-3 text-white">Sedra - North Costa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="serves">
+      <div class="container py-5">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <i class="nc-icon nc-globe text-warning"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <p class="card-category">Capacity</p>
+                      <p class="card-title">150GB
+                        <p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                  <i class="fa fa-refresh"></i> Update Now
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <i class="nc-icon nc-money-coins text-success"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <p class="card-category">Revenue</p>
+                      <p class="card-title">$ 1,345
+                        <p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                  <i class="fa fa-calendar-o"></i> Last day
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <i class="nc-icon nc-vector text-danger"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <p class="card-category">Errors</p>
+                      <p class="card-title">23
+                        <p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                  <i class="fa fa-clock-o"></i> In the last hour
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <i class="nc-icon nc-favourite-28 text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <p class="card-category">Followers</p>
+                      <p class="card-title">+45K
+                        <p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                  <i class="fa fa-refresh"></i> Update now
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
 </div>
+
+<app-footer></app-footer>
+

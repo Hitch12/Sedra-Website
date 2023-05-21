@@ -47,7 +47,7 @@ a{
   background-size: cover;
   height: 50vh;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
   width: 100%;
   position: relative;
 
@@ -92,6 +92,9 @@ a{
   .card-body p{
     margin-bottom: 0px;
 
+  }
+  .backGroundImg h2{
+    font-size: 48px;
   }
 }
 

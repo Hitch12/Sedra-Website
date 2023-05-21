@@ -10,16 +10,16 @@ import { BranchComponent } from './branch/branch.component';
 const routes: Routes = [
   {path:'' , redirectTo:'home' , pathMatch:'full'},
   {path:'home' , component:HomeComponent},
-  {path:'prodactDetails' , component:ProdactDetailsComponent},
-  {path:'category' , component:CategoryComponent},
-  {path:'branch' , component:BranchComponent},
+  {path:'prodactDetails/:id/:name' , component:ProdactDetailsComponent},
+  {path:'category/:id/:name' , component:CategoryComponent},
+  {path:'branch/:id/:name' , component:BranchComponent},
   {path:'about' , component:AboutComponent},
   {path:'**' , component:NotFoundComponent},
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes ,{useHash:true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

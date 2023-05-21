@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import * as $ from "jquery";
+import { DataService } from '../data.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -8,14 +9,46 @@ import * as $ from "jquery";
 })
 export class NavbarComponent  {
 
+  // Attr
+  Categories:Array<any> = []
+  Branches:Array<any> = []
+
+
   constructor(
-    private _ActivatedRoute:ActivatedRoute
+    private _ActivatedRoute:ActivatedRoute,
+    private _data:DataService
   ){}
-  ngOnInit() :void
-  {
-    //console.log(window.location.pathname)
-    // $('.navbar').css('backgroundColor', '#00000065')
-    // $('.navbar').css('padding', '10px')
+
+
+  // Methods
+  getCategories(){
+
+    this._data.getCategories().subscribe({
+      next:(result) => {
+        this.Categories = result;
+
+      }
+    })
+  }
+  // getAntherCategory(id:string, name:string){
+
+  // }
+  getBranches(){
+    this._data.getBranches().subscribe({
+      next:(result) => {
+        this.Branches = result;
+
+      }
+    })
+  }
+
+
+
+  ngOnInit() :void{
+
+    this.getCategories()
+    this.getBranches()
+    console.log(this.Categories)
     $(window).scroll( ()=> {
       let windowScroll:number = $(window).scrollTop() as number;
       //let offsetAbout:number = $('#BEST-SELLER').offset()?.top as number;
@@ -29,21 +62,29 @@ export class NavbarComponent  {
           $('.navbar').css('padding', '10px')
           $('#btn-up').fadeOut(500)
         }
-
     })
+
+
     $('#btn-up').click(function(){
       $('body,html').animate({scrollTop:0},0)
     })
-    document.querySelector('.nav-dropdown-category')?.addEventListener('click',()=>{
+
+
+
+    $('.nav-dropdown-category').click(()=>{
+
       if(!$('.dropdown-category').hasClass('dropdown-effect')){
         $('.dropdown-category').addClass(['dropdown-effect'])
         $('.dropdown-Branch').removeClass(['dropdown-effect'])
       }
       else
+      {
         $('.dropdown-category').removeClass(['dropdown-effect'])
+      }
+
     })
 
-    document.querySelector('.nav-dropdown-Branch')?.addEventListener('click',()=>{
+    $('.nav-dropdown-Branch').click(()=>{
       if(!$('.dropdown-Branch').hasClass('dropdown-effect')){
         $('.dropdown-Branch').addClass(['dropdown-effect'])
         $('.dropdown-category').removeClass(['dropdown-effect'])
@@ -52,6 +93,11 @@ export class NavbarComponent  {
         $('.dropdown-Branch').removeClass(['dropdown-effect'])
     })
 
+    $('.navNotDrop').click(()=>{
+      $('.dropdown-Branch').removeClass(['dropdown-effect'])
+      $('.dropdown-category').removeClass(['dropdown-effect'])
+
+    })
 
 
 

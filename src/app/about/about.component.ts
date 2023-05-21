@@ -7,7 +7,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-  events: any[] = [];
+  loading:boolean = true;
 
   slideBranch: OwlOptions = {
     loop: true,
@@ -40,41 +40,31 @@ export class AboutComponent {
 
 
   ngOnInit() {
-      this.events = [
-        {
-          status: 'Ordered',
-          date: '15/10/2020 10:30',
-          icon: 'pi pi-shopping-cart',
-          color: '#9C27B0',
-          image: '../../assets/golf.jpeg',
-          class:'first shadow-2 rounded-2 mx-0 '
-        },
-        {
-          status: 'Processing',
-          date: '15/10/2020 14:00',
-          icon: 'pi pi-cog',
-          color: '#673AB7'
-        },
-        {
-          status: 'Shipped',
-          date: '15/10/2020 16:15',
-          icon: 'pi pi-shopping-cart',
-          color: '#FF9800'
-        },
-        {
-          status: 'Delivered',
-          date: '16/10/2020 10:00',
-          icon: 'pi pi-check',
-          color: '#607D8B'
-        },
-        {
-          status: 'Delivered',
-          date: '16/10/2020 10:00',
-          icon: 'pi pi-check',
-          color: '#607D8B'
-        },
-    ];
-    console.log($('.first').offset()?.top as number)
+
+    $(window).scroll(()=>{
+      let windowScroll:number = $(window).scrollTop() as number;
+      let offset_Item3:number = $('#item3').offset()?.top as number;
+      let offset_Item2:number = $('#item2').offset()?.top as number;
+      let offset_Item1:number = $('#item1').offset()?.top as number;
+
+      if(windowScroll >  offset_Item1 - offset_Item1){
+        $('#item1').addClass(['item1-fadeIn'])
+      }else $('#item1').removeClass(['item1-fadeIn'])
+      if(windowScroll > offset_Item2 - offset_Item2){
+        $('#item2').addClass(['item2-fadeIn'])
+      }else $('#item2').removeClass(['item2-fadeIn'])
+      if(windowScroll > offset_Item3 - offset_Item3){
+        $('#item3').addClass(['item3-fadeIn'])
+      }else $('#item3').removeClass(['item3-fadeIn'])
+
+
+    })
+
 
   }
+
+
+
+
+
 }

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import * as $ from "jquery";
-import { window } from 'rxjs';
+import { DataService } from '../data.service';
 
 
 @Component({
@@ -11,10 +10,9 @@ import { window } from 'rxjs';
 })
 export class HomeComponent {
   loading:boolean = true;
-  ngOnInit(): void {
+  Categories:Array<any> = []
+  Branches:Array<any> = []
 
-
-  }
 
   customOptions: OwlOptions = {
     loop: true,
@@ -181,4 +179,33 @@ export class HomeComponent {
     margin:10,
     animateOut: 'fadeOut',
   }
+
+  constructor(private _data:DataService) { }
+
+  getCategories(){
+    this._data.getCategories().subscribe({
+      next:(result) => {
+        this.Categories = result;
+        this.loading = false;
+        //console.log(this.Categories)
+      }
+    })
+  }
+  getBranches(){
+    this._data.getBranches().subscribe({
+      next:(result) => {
+        this.Branches = result;
+        this.loading = false;
+        //console.log(this.Branches)
+      }
+    })
+  }
+
+
+  ngOnInit(): void {
+    this.getCategories()
+    this.getBranches()
+
+  }
+
 }
