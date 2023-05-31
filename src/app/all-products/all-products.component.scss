@@ -1,0 +1,241 @@
+.title{
+  font-family: 'Bodoni Moda', serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: #fff;
+}
+.text-main{
+  color: #157432;///*
+}
+.bg-main{
+  background-color: #157432;///*
+}
+a{
+  text-decoration: none;
+}
+
+
+.backGroundImg{
+  background-size: cover;
+  height: 45vh;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  position: relative;
+
+}
+.backGroundImg div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.backGroundImg h2{
+  font-size: 72px;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  z-index: 9;
+}
+.backGroundImg::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #00000090;
+}
+
+
+
+.card{
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-top: 2px;
+  transition: 0.3s;
+  margin-bottom: 15px;
+  .card-body h3{
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0px;
+    margin-bottom: 5px;
+    color: #000;
+  }
+  .card-body p{
+    margin-bottom: 3px;
+
+  }
+  .card-footer{
+    background-color: white;
+    display: flex;
+    align-items: center;
+  }
+  .card-footer p{
+    transition: 0.3s;
+    color: #157432;
+
+  }
+  .card:hover .card-footer p{
+    margin-left: 5px;
+  }
+  .img-card{
+    width: 100%;
+  }
+}
+.card:hover {
+  margin-top: 0px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.18), 0 5px 5px rgba(0,0,0,0.15);
+}
+
+
+
+
+// Categories
+.categoryCard{
+  border-radius: 15px;
+
+  .imgSliderCategories{
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+  }
+  .layerCategories{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0000006d;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+  }
+  .categoryName{
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+  }
+}
+
+
+// Branches
+.BranchCard{
+  border-radius: 15px;
+
+  .imgSliderBranch{
+    background-position: center center;
+    background-size: cover;
+    height: 45vh;
+  }
+  .layerBranch{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #00000050;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+  }
+  .layerBranch:hover{
+    cursor: pointer;
+    background: #00000025;
+  }
+
+  .layerBranch p{
+    font-size: 34px;
+    color: white;
+    font-family: 'Bodoni Moda', serif;
+  }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .backGroundImg{
+    height: 40vh;
+  }
+  .card-body h3{
+    font-weight: 600;
+    font-size: 15px;
+
+  }
+  .card-body p{
+    margin-bottom: 0px;
+
+  }
+  .backGroundImg h2{
+    font-size: 48px;
+  }
+  .card{
+    .card-footer p{
+      font-size: 12px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+    .card-body{
+      padding: 10px 0px 10px 15px;
+    }
+    .card-body p{
+      margin-bottom: 0px;
+
+    }
+    .card-body h3{
+      font-size: 14px;
+    }
+  }
+  .categoryCard{
+
+    .categoryName{
+      font-size: 26px;
+      font-family: 'Bodoni Moda', serif;
+      font-weight: 400;
+      color: white;
+    }
+  }
+
+  .BranchCard{
+    border-radius: 8px;
+
+    .imgSliderBranch{
+
+      height: 150px;
+    }
+    .layerBranch p{
+      font-size: 24px;
+
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

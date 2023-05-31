@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { DataService } from '../data.service';
-
+import { NgOptimizedImage } from '@angular/common'
 
 @Component({
   selector: 'app-home',
@@ -12,10 +12,12 @@ export class HomeComponent {
   loading:boolean = true;
   Categories:Array<any> = []
   Branches:Array<any> = []
-
+  allProducts:Array<any> = []
+  smellerProducts:Array<any> = []
 
   customOptions: OwlOptions = {
     loop: true,
+    lazyLoad:true,
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
@@ -42,6 +44,8 @@ export class HomeComponent {
   };
   BestSellerOptions: OwlOptions = {
     loop: true,
+    lazyLoad:true,
+
     mouseDrag: false,
     touchDrag: true,
     pullDrag: false,
@@ -70,6 +74,7 @@ export class HomeComponent {
   };
   categoriesOptions: OwlOptions = {
     loop: true,
+
     mouseDrag: false,
     touchDrag: true,
     pullDrag: false,
@@ -122,12 +127,12 @@ export class HomeComponent {
     nav: false,
     autoplay: false,
     autoplayTimeout: 7000,
-    animateOut: 'fadeOut',
-    margin:2,
     center: true,
   };
   slideBranch: OwlOptions = {
     loop: true,
+    lazyLoad:true,
+
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
@@ -154,6 +159,8 @@ export class HomeComponent {
   }
   productOptions: OwlOptions = {
     loop: true,
+    lazyLoad:true,
+
     mouseDrag: false,
     touchDrag: true,
     pullDrag: true,
@@ -200,12 +207,32 @@ export class HomeComponent {
       }
     })
   }
+  getAllProducts(){
+    this._data.getAllProducts().subscribe({
+      next:(result)=>{
+        let res:Array<any> = result
+        this.smellerProducts = res.filter(x=>x.bestSeller == true )
+        // console.log(this.smellerProducts)
 
+      this.allProducts = result.slice(0,10);
+
+      }
+    })
+  }
 
   ngOnInit(): void {
-    this.getCategories()
-    this.getBranches()
+
+      this.getCategories();
+      this.getBranches();
+      this.getAllProducts();
+
+
 
   }
+
+
+
+
+
 
 }

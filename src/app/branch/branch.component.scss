@@ -1,14 +1,10 @@
 :root{
   --main-color : #157432;
 }
-body{
-  overflow: hidden;
-}
+
 .main{
   width: 100%;
-  height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 .layer{
   position: absolute;
@@ -18,30 +14,98 @@ body{
   right: 0;
   background: #00000020;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.main-box{
-  position: absolute;
-  z-index: 5;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate( -50% ,-50% );
-  width: 50%;
-  height: 50vh;
-}
-// .main-box h1{
-//   color: white;
-//   font-family: 'Bodoni Moda', serif;
-//   font-weight: 500;
-//   font-size: 72px;
+
+
+// .imgSlider{
+//   background-position: center center;
+//   background-size: cover;
+//   height: 100vh;
 // }
-// .main-box p{
-//   font-family: 'Bodoni Moda', serif;
-//   font-size: 24px;
-//   color: white;
-// }
-.imgSlider{
-  background-position: center center;
+.backGroundImg{
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+  background: #000;
+  background-size: cover;
+  background-position-x:center;
+  background-position-y:center;
+
+  width: 100%;
+  position: relative;
+  filter: blur(4px);
+}
+.backGroundImg::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #00000090;
+}
+.box-info{
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.box-info h2{
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 500;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+.box-info ul{
+  list-style: none;
+  text-align: start;
+  display: block;
+  margin: auto;
+  width: fit-content;
+  font-size: 24px;
+  font-family: 'Bodoni Moda', serif;
+  margin: 0;
+
+}
+.box-info ul i{
+  width: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #e3ab5c;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 75vh;
+  width: 100%;
+  padding: 15px;
+  background: hsla(0, 0%, 0%, 0.50) !important;
+  border: solid 2px #e3ab5c ;
+  border-radius: 8px;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 100%;
+  width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .gmap_canvas{
+    height: 50vh;
+  }
+  .backGroundImg{
+    min-height: 110vh;
+
+  }
+  .box-info ul{
+    font-size: 20px;
+  }
+  .box-info h2{
+    font-size: 42px;
+
+  }
 }

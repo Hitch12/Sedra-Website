@@ -1,0 +1,123 @@
+.backGroundImg{
+  background-size: cover;
+  height: 60vh;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  position: relative;
+
+}
+.backGroundImg div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.backGroundImg h2{
+  font-size: 72px;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  z-index: 9;
+}
+.backGroundImg::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #00000090;
+}
+.mainColor{
+  color: #b9843c;
+}
+.contactUs{
+  background: #111;
+  color: white;
+}
+.contactUs h3{
+  font-size: 28px;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 400;
+  margin: 30px 0px 50px;
+
+}
+.contactBox{
+  padding: 30px;
+  margin-bottom: 50px;
+}
+.addressInfo{
+  border-left: 1.5px solid #b9843c;
+  border-right: 1.5px solid #b9843c;
+}
+.contactBox > i{
+  color: #b9843c;
+  font-size: 28px;
+  margin: 15px;
+}
+.contactBox h5{
+  font-size: 20px;
+  font-family: 'Bodoni Moda', serif;
+  margin: 10px 0px 25px;
+  color: #b9843c;
+
+}
+.contactBox p i{
+  padding: 0px 5px 0px 0px;
+  color: #b9843c;
+
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+.links a{
+  text-decoration: none;
+  color: #b9843c;
+  margin: 0px 20px;
+  font-size: 30px;
+  overflow: hidden;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 60vh;
+  width: 75%;
+  border: 1.5px solid #b9843c;
+
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 60vh;
+  width: 100%;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .backGroundImg h2{
+    font-size: 48px;
+  }
+  .mapouter {
+    height: 40vh;
+    width: 100%;
+    border: 2.5px solid #b9843c;
+
+  }
+  .phoneInfo{
+    border-right: 1.5px solid #b9843c;
+
+  }
+  .addressInfo{
+    border-right: none;
+  }
+  .emailInfo{
+    border-right: 1.5px solid #b9843c;
+  }
+  .links a{
+    font-size: 25px;
+  }
+}

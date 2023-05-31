@@ -12,7 +12,7 @@ export class CategoryComponent {
   loading:boolean = true;
   items: MenuItem [] = [];
   home: MenuItem = {};
-  private id:any;
+  id:any;
   name:string = '';
   products: Array<any> = []
   allProducts: Array<any> = []
@@ -38,8 +38,11 @@ export class CategoryComponent {
     window.scrollTo({top:0 });
     this._ActivatedRoute.paramMap.subscribe(params =>{
       this.id = params.get('id');
+      this.loading = true;
+
       this.getProductsCategories(this.id)
     })
+
     this.name = this._ActivatedRoute.snapshot.params['name'];
     this.getProductsCategories(this.id)
 
@@ -52,5 +55,10 @@ export class CategoryComponent {
     ];
 
     this.home = { icon: 'pi pi-home', routerLink: '/home' };
+
+
+
   }
+
+
 }

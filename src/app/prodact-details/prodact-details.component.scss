@@ -26,7 +26,12 @@ hr{
 .imgSlider{
   background-position: center center;
   background-size: cover;
-  height: 60vh;
+  height: 500px;
+  transition: 0.5s;
+}
+.shadow-xl{
+  box-shadow: 0 2px 10px rgba(0,0,0,0.18), 0 2px 10px rgba(0,0,0,0.15);
+  margin-bottom: 10px;
 }
 .backGroundImg{
   background-size: cover;
@@ -115,10 +120,47 @@ a{
   font-weight: 600;
   font-size: 20px;
 }
+.productInfo .price{
+  font-size: 18px;
+
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .backGroundImg{
-    height: 40vh;
+    height: 25vh;
+  }
+  .imgSlider{
+    background-position: center center;
+    background-size: cover;
+    height: 350px;
+  }
+  .smeller-items h2{
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 600;
+    margin: 15px 0px 10px;
+    font-size: 24px;
+  }
+  .card-footer p{
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .card-body{
+    padding: 10px 0px 10px 15px;
+  }
+  .card-body p{
+    margin-bottom: 0px;
+
+  }
+  .card-body h3{
+    font-size: 14px;
+  }
+  .productInfo h2{
+    text-align: center;
+  }
+  .productInfo p{
+    text-align: center;
+
   }
 
 }

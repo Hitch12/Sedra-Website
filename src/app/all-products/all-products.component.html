@@ -1,0 +1,103 @@
+<app-navbar *ngIf="!loading"></app-navbar>
+
+<div class="all-products" *ngIf="!loading">
+  <div class="backGroundImg" style="background-image: url(../../assets/5.jpg);">
+    <div class="text-center ">
+      <h2 class="title">Sedra</h2>
+    </div>
+  </div>
+
+
+
+  <div class="" *ngIf="thereProducts">
+    <div class=" py-3 mb-4 mt-4">
+      <div class="container">
+        <h2 class="m-0 text-main title"  >Products</h2>
+      </div>
+    </div>
+    <div class="container mt-2">
+      <div class="row g-3">
+        <div class="col-md-3 col-6" *ngFor="let product of allProducts">
+          <a [routerLink]="['/prodactDetails', product.id, product.name]">
+            <div Class="card">
+              <div class="">
+                <img alt="" class="img-card" [src]="product.images['0'].image" />
+              </div>
+              <div class="card-body">
+                <h3>{{product.name}}</h3>
+                <p class="text-muted">{{product.price}} EG</p>
+              </div>
+              <div class="card-footer">
+                <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="py-5" *ngIf="thereCategories">
+    <div class=" py-2 mb-4 mt-4">
+      <div class="container">
+        <h2 class="m-0 text-main title">Categories</h2>
+      </div>
+    </div>
+    <div class="container mt-2">
+      <div class="row g-3">
+        <div class="col-md-4 col-6" *ngFor="let category of Categories">
+
+              <a [routerLink]="['/category', category.id, category.name]">
+                <div class="position-relative overflow-hidden categoryCard">
+                  <div class="imgSliderCategories" priority [style]="'background-image: url('+category.postarPath+');'"></div>
+                  <div class="layerCategories">
+                    <p class="categoryName">{{category.name}}</p>
+                  </div>
+                </div>
+              </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="pb-5" *ngIf="thereBranches">
+    <div class=" py-2  mb-4 mt-4">
+      <div class="container">
+        <h2 class="m-0 text-main title">Branches</h2>
+      </div>
+    </div>
+    <div class="container mt-2">
+      <div class="row g-2">
+        <div class="col-md-4 col-6" *ngFor="let Branch of Branches">
+
+              <a [routerLink]="['/category', Branch.id, Branch.name]">
+                <div class="position-relative overflow-hidden BranchCard">
+
+                  <owl-carousel-o [options]="slideBranch">
+                    <ng-template carouselSlide *ngFor="let slide of Branch.branchImages">
+                      <div class="imgSliderBranch" [style]="'background-image: url('+ slide.image +');'"></div>
+                    </ng-template>
+                  </owl-carousel-o>
+
+                  <div class="layerBranch">
+                    <p class="branchName">{{Branch.name}}</p>
+                  </div>
+                </div>
+              </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<app-loading *ngIf="loading"></app-loading>
+
+
+<app-footer *ngIf="!loading"></app-footer>

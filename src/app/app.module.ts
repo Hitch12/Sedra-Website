@@ -17,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoadingComponent } from './loading/loading.component';
 import { CategoryComponent } from './category/category.component';
 import { BranchComponent } from './branch/branch.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { AllProductsComponent } from './all-products/all-products.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,9 @@ import { BranchComponent } from './branch/branch.component';
     ProdactDetailsComponent,
     LoadingComponent,
     CategoryComponent,
-    BranchComponent
+    BranchComponent,
+    ContactusComponent,
+    AllProductsComponent
   ],
   imports: [
     BrowserModule,

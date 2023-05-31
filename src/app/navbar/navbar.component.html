@@ -37,16 +37,34 @@
           <a class="nav-link navNotDrop" routerLink="/about">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link navNotDrop" routerLink="/about">Contact Us</a>
+          <a class="nav-link navNotDrop" routerLink="/contactus">Contact Us</a>
         </li>
       </ul>
-      <!-- <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form> -->
+
+
+
+
     </div>
+    <form class="search">
+      <input type="checkbox" id="toggleSearch" class="search__toggle" hidden />
+      <div class="search__field shadow">
+        <label for="toggleSearch" class="search__label">
+          <!-- <span *ngIf="isClose" class="search__close"></span> -->
+        </label>
+        <input type="text" pTooltip="Click on the magnifying to search" tooltipPosition="bottom" class="search__input" placeholder="What are you looking for?" />
+        <label for="toggleSearch" class="search__label">
+          <div class="search__button">
+            <div class="search__icon search__button--toggle"></div>
+          </div>
+          <button class="search__button search__button--submit">
+            <div class="search__icon"></div>
+          </button>
+        </label>
+      </div>
+    </form>
   </div>
 </nav>
-<button class="btn-up btn shadow" id="btn-up">
+<!-- <button class="btn-up btn shadow" id="btn-up">
   <i class="fa-solid fa-chevron-up fa-2x m-0"></i>
-</button>
+</button> -->
+<p-scrollTop styleClass=" rounded-2 bg-success"></p-scrollTop>

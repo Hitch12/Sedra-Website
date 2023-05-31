@@ -6,6 +6,8 @@ import { ProdactDetailsComponent } from './prodact-details/prodact-details.compo
 import { CategoryComponent } from './category/category.component';
 import { AboutComponent } from './about/about.component';
 import { BranchComponent } from './branch/branch.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { AllProductsComponent } from './all-products/all-products.component';
 
 const routes: Routes = [
   {path:'' , redirectTo:'home' , pathMatch:'full'},
@@ -13,7 +15,9 @@ const routes: Routes = [
   {path:'prodactDetails/:id/:name' , component:ProdactDetailsComponent},
   {path:'category/:id/:name' , component:CategoryComponent},
   {path:'branch/:id/:name' , component:BranchComponent},
+  {path:'contactus' , component:ContactusComponent},
   {path:'about' , component:AboutComponent},
+  {path:'all-products/:value' , component:AllProductsComponent},
   {path:'**' , component:NotFoundComponent},
 
 ];

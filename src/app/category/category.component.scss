@@ -86,7 +86,7 @@ a{
   }
   .card-body h3{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 15px;
 
   }
   .card-body p{
@@ -95,6 +95,21 @@ a{
   }
   .backGroundImg h2{
     font-size: 48px;
+  }
+  .card-footer p{
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .card-body{
+    padding: 10px 0px 10px 15px;
+  }
+  .card-body p{
+    margin-bottom: 0px;
+
+  }
+  .card-body h3{
+    font-size: 14px;
   }
 }
 

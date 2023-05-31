@@ -21,6 +21,17 @@ export class DataService {
   {
     return this._HttpClient.get(`http://ahmdhss-001-site1.dtempurl.com/api/Departs/Departs`)
   }
+  getAllProducts():Observable<any>
+  {
+    return this._HttpClient.get(`http://ahmdhss-001-site1.dtempurl.com/api/Items/Prodects`)
+  }
+
+  // PutAllProducts(data:Array<any>):Observable<any>
+  // {
+  //   return this._HttpClient.put(`http://ahmdhss-001-site1.dtempurl.com/api/Items/Prodects`,data,{
+  //     params:{"Control_Code":"101010"}
+  //   })
+  // }
 
 
 

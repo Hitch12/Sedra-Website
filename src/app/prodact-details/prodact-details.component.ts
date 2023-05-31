@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { MenuItem } from 'primeng/api';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-prodact-details',
@@ -8,55 +10,7 @@ import { MenuItem } from 'primeng/api';
   styleUrls: ['./prodact-details.component.scss'],
 })
 export class ProdactDetailsComponent {
-  // images: any[] = [
-  //   {
-  //     itemImageSrc:
-  //       '../../assets/279123683_1664034763953327_1892697871383421844_n.jpg',
-  //     thumbnailImageSrc:
-  //       '../../assets/279123683_1664034763953327_1892697871383421844_n.jpg',
-  //     alt: 'Description for Image 1',
-  //     title: 'Title 1',
-  //   },
-  //   {
-  //     itemImageSrc:
-  //       'https://primefaces.org/cdn/primeng/images/galleria/galleria2.jpg',
-  //     thumbnailImageSrc:
-  //       'https://primefaces.org/cdn/primeng/images/galleria/galleria2s.jpg',
-  //     alt: 'Description for Image 2',
-  //     title: 'Title 2',
-  //   },
-  //   {
-  //     itemImageSrc:
-  //       'https://primefaces.org/cdn/primeng/images/galleria/galleria3.jpg',
-  //     thumbnailImageSrc:
-  //       'https://primefaces.org/cdn/primeng/images/galleria/galleria3s.jpg',
-  //     alt: 'Description for Image 3',
-  //     title: 'Title 3',
-  //   },
-  //   {
-  //     itemImageSrc:
-  //       'https://primefaces.org/cdn/primeng/images/galleria/galleria4.jpg',
-  //     thumbnailImageSrc:
-  //       'https://primefaces.org/cdn/primeng/images/galleria/galleria4s.jpg',
-  //     alt: 'Description for Image 4',
-  //     title: 'Title 4',
-  //   },
-  // ];
 
-  // responsiveOptions: any[] = [
-  //   {
-  //     breakpoint: '1024px',
-  //     numVisible: 5,
-  //   },
-  //   {
-  //     breakpoint: '768px',
-  //     numVisible: 3,
-  //   },
-  //   {
-  //     breakpoint: '560px',
-  //     numVisible: 1,
-  //   },
-  // ];
   slider: OwlOptions = {
     loop: true,
     mouseDrag: false,
@@ -83,10 +37,6 @@ export class ProdactDetailsComponent {
     autoplayTimeout: 3000,
     animateOut: 'fadeOut',
   }
-  items: MenuItem[] = [];
-
-  home: MenuItem = {};
-  constructor() {}
   BestSellerOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,
@@ -95,7 +45,6 @@ export class ProdactDetailsComponent {
     dots: true,
     dotsData: true,
     navSpeed: 700,
-    navText:['','<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>'],
     responsive: {
       0: {
         items: 2,
@@ -108,23 +57,79 @@ export class ProdactDetailsComponent {
       },
       940: {
         items: 4,
-        nav: true,
       },
     },
     autoplay: true,
     autoplayTimeout: 7000,
     animateOut: 'fadeOut',
-    margin: 20,
+    margin: 10,
   };
+
+  items: MenuItem[] = [];
+  home: MenuItem = {};
+  id:any;
+  allProducts: Array<any> = []
+  allCategories: Array<any> = []
+  smellerProducts: Array<any> = []
+  currentProduct:any
+  loading:boolean = true;
+  departmentName:string = ''
+  constructor(private _ActivatedRoute:ActivatedRoute, private _DataService:DataService)  {}
+
+
+
+
+
+  getProductDetails(id:any){
+    this._DataService.getAllProducts().subscribe({
+      next:(result)=>{
+        this.allProducts = result
+        let product =this.allProducts.find(x=>x.id==id);
+        this.currentProduct = product
+        this.departmentName = product.departName
+        // console.log(this.currentProduct)
+        this.items = [
+          { label: product.departName,  routerLink: ['/category', product.idDepart, product.departName] },
+          { label: product.name,  routerLink: '/', disabled:true},
+        ];
+        this.loading = false
+        this.getSmellerProducts(this.departmentName,product.name)
+      }
+    })
+  }
+
+  getSmellerProducts(departmentName:any,productName:any){
+    this._DataService.getProductsCategories().subscribe({
+      next:(result)=>{
+        this.allCategories = result;
+        // console.log(this.allCategories)
+        var specialDepart = this.allCategories.find(x=>x.name == departmentName);
+        this.allCategories = specialDepart.prodects
+        this.allCategories = this.allCategories.filter(x=>x.name != productName )
+
+        console.log(this.allCategories)
+      }
+    })
+  }
+
+
+
+
   ngOnInit() {
     $('body,html').animate({ scrollTop: 0 }, 0);
-    $('.navbar').css('backgroundColor', 'black')
-    $('.navbar').css('padding', '15px')
-    $('#btn-up').fadeIn(500)
-    this.items = [
-      { label: 'Bast Seller',  routerLink: '/'  },
-      { label: 'Kunafa Marshmallow',  routerLink: '/', disabled:true},
-    ];
+
+
+
+
+    this._ActivatedRoute.paramMap.subscribe(params =>{
+      this.id = params.get('id');
+      this.getProductDetails(this.id)
+      $('body,html').animate({scrollTop:0},0)
+
+    })
+
+
+
 
     this.home = { icon: 'pi pi-home', routerLink: '/home' };
   }

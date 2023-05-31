@@ -40,6 +40,7 @@ export class AboutComponent {
 
 
   ngOnInit() {
+    window.scrollTo({top:0 });
 
     $(window).scroll(()=>{
       let windowScroll:number = $(window).scrollTop() as number;

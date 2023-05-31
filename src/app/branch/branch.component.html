@@ -1,59 +1,111 @@
-<div class="main" id="main">
-  <div class="main-box shadow">
-    <div class="">
-      <div class="mapouter">
-        <div class="gmap_canvas">
-          <iframe
-            width="100%"
-            height="100%"
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?q=sedra ard El Golf &t=&z=17&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe>
-          <a href="https://2yu.co"></a>
-          <br />
-          <style>
-            .mapouter {
-              position: relative;
-              text-align: right;
-              height: 100%;
-              width: 100%;
-            }
-          </style>
-          <a href="https://embedgooglemap.2yu.co/"></a>
-          <style>
-            .gmap_canvas {
-              overflow: hidden;
-              background: none !important;
-              height: 50vh;
-              width: 100%;
-              padding: 30px;
-              background: hsla(0, 0%, 0%, 0.50) !important;
-              border-radius: 8px;
-            }
-          </style>
-        </div>
-      </div>
-    </div>
 
-  </div>
-  <div class="">
+<app-loading *ngIf="loading"></app-loading>
+
+<app-navbar *ngIf="!loading"></app-navbar>
+
+
+<div class="main" id="main" *ngIf="!loading">
+  <div class="position-relative">
     <owl-carousel-o [options]="customOptions" >
-      <ng-template carouselSlide id="1">
-        <div class="imgSlider" style="background-image: url(../../assets/golf.jpeg);"></div>
-      </ng-template>
-      <ng-template carouselSlide id="2">
-        <div class="imgSlider" style="background-image: url(../../assets/golf1.jpg);"></div>
-      </ng-template>
-      <ng-template carouselSlide id="3">
-        <div class="imgSlider" style="background-image: url(../../assets/golf2.jpg);"></div>
+      <ng-template carouselSlide *ngFor="let image of images">
+        <div class="backGroundImg" [style]="'background-image: url('+ image.image +');'"></div>
+
       </ng-template>
 
     </owl-carousel-o>
-    <div class="layer"></div>
+
+
+    <div class="layer">
+      <div class="container py-5">
+
+
+        <div class="row">
+
+          <div class="col-md-6 d-md-none">
+            <div class="box-info  mt-5">
+              <h2>{{name}}</h2>
+              <ul>
+                <li><i class="fa-solid fa-phone"></i> {{phone}}</li>
+                <li><i class="fa-solid fa-envelope"></i> {{email}}</li>
+                <li><i class="fa-solid fa-location-dot"></i> {{address}}</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <div class="mapouter shadow-lg mt-5" *ngIf="address == 'Sedra - Ard El Golf Branch'">
+              <div class="gmap_canvas">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q= Sedra - Ard El Golf Branch &t=&z=17&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe>
+                <a href="https://2yu.co"></a>
+                <br />
+                <a href="https://embedgooglemap.2yu.co/"></a>
+              </div>
+            </div>
+            <div class="mapouter shadow-lg mt-5" *ngIf="address == 'Sedra - North Costa'">
+              <div class="gmap_canvas">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q= sedra marassi north coast &t=&z=17&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe>
+                <a href="https://2yu.co"></a>
+                <br />
+                <a href="https://embedgooglemap.2yu.co/"></a>
+              </div>
+            </div>
+            <div class="mapouter shadow-lg mt-5" *ngIf="address == 'Sedra - El Tagmoa'">
+              <div class="gmap_canvas">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q= Sedra - El Tagmoa &t=&z=17&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe>
+                <a href="https://2yu.co"></a>
+                <br />
+                <a href="https://embedgooglemap.2yu.co/"></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 d-none d-md-block">
+            <div class="box-info  mt-5">
+              <h2>{{name}}</h2>
+              <ul>
+                <li><i class="fa-solid fa-phone"></i> {{phone}}</li>
+                <li><i class="fa-solid fa-envelope"></i> {{email}}</li>
+                <li><i class="fa-solid fa-location-dot"></i> {{address}}</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
   </div>
+
 </div>
 
+<app-footer *ngIf="!loading"></app-footer>
