@@ -1,0 +1,58 @@
+[
+    {
+        "id": 7,
+        "name": "Bakary",
+        "descraption": "string",
+        "postarPath": "assets/ImgeDeparts/7198865_1_.jpg",
+        "imageBackground": "assets/ImgeDeparts/7379335_2_.jpg",
+        "prodects": []
+    },
+    {
+        "id": 8,
+        "name": "Oriental",
+        "descraption": "string",
+        "postarPath": "assets/ImgeDeparts/8303079_1_.jpg",
+        "imageBackground": "assets/ImgeDeparts/8598228_2_.jpg",
+        "prodects": []
+    },
+    {
+        "id": 9,
+        "name": "Catering",
+        "descraption": "string",
+        "postarPath": "assets/ImgeDeparts/9773153_1_.jpg",
+        "imageBackground": "assets/ImgeDeparts/9296819_2_.jpg",
+        "prodects": []
+    },
+    {
+        "id": 10,
+        "name": "Hot Catering",
+        "descraption": "string",
+        "postarPath": "assets/ImgeDeparts/10469472_1_.jpg",
+        "imageBackground": "assets/ImgeDeparts/1058191_2_.jpg",
+        "prodects": []
+    },
+    {
+        "id": 11,
+        "name": "Ramadan",
+        "descraption": "string",
+        "postarPath": "assets/ImgeDeparts/11250081_1_.jpg",
+        "imageBackground": "assets/ImgeDeparts/1191245_2_.jpg",
+        "prodects": []
+    },
+    {
+        "id": 12,
+        "name": "Imblage",
+        "descraption": "string",
+        "postarPath": "assets/ImgeDeparts/12338493_1_.jpg",
+        "imageBackground": "assets/ImgeDeparts/12445497_2_.jpg",
+        "prodects": []
+    },
+    {
+        "id": 13,
+        "name": "Tortes",
+        "descraption": "string",
+        "postarPath": "assets/ImgeDeparts/13168025_1_.jpg",
+        "imageBackground": "assets/ImgeDeparts/13150519_2_.jpg",
+        "prodects": []
+    }
+]

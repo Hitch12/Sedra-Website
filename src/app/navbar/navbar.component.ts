@@ -44,6 +44,7 @@ export class NavbarComponent  {
 
 
   ngOnInit() :void{
+    window.scrollTo({top:0 });
 
     this.getCategories()
     this.getBranches()
@@ -108,6 +109,10 @@ export class NavbarComponent  {
     }
     if(input.value){
       this._Router.navigate(['/all-products', input.value])
+      toggle.checked = false
+      input.value = ''
+      window.scrollTo({top:0 });
+
     }
     const isSearchField = clickedElement.closest('.search__field')
 

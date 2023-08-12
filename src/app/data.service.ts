@@ -11,19 +11,19 @@ export class DataService {
 
   getCategories():Observable<any>
   {
-    return this._HttpClient.get(`http://ahmdhss-001-site1.dtempurl.com/api/Departs/Departs_Only`)
+    return this._HttpClient.get(`assets/dataJson/DepartsOnly.json`)
   }
   getBranches():Observable<any>
   {
-    return this._HttpClient.get(`http://ahmdhss-001-site1.dtempurl.com/api/Branches/Branches`)
+    return this._HttpClient.get(`assets/dataJson/Branshes.json`)
   }
   getProductsCategories():Observable<any>
   {
-    return this._HttpClient.get(`http://ahmdhss-001-site1.dtempurl.com/api/Departs/Departs`)
+    return this._HttpClient.get(`assets/dataJson/Departs.json`)
   }
   getAllProducts():Observable<any>
   {
-    return this._HttpClient.get(`http://ahmdhss-001-site1.dtempurl.com/api/Items/Prodects`)
+    return this._HttpClient.get(`assets/dataJson/Prodects.json`)
   }
 
   // PutAllProducts(data:Array<any>):Observable<any>

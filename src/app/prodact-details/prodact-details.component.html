@@ -5,7 +5,7 @@
 
 
 <div class="productDetails"  *ngIf="!loading">
-  <div class="backGroundImg" style="background-image: url(../../assets/1.jpg);"></div>
+  <div class="backGroundImg" style="background-image: url(assets/1.jpg);"></div>
   <div class="container mt-4">
 
 
@@ -21,7 +21,14 @@
 
         <owl-carousel-o [options]="slider">
           <ng-template carouselSlide *ngFor="let img of currentProduct.images" >
+            <!-- <lib-ngx-image-zoom
+            [thumbImage]="img.image"
+            [fullImage]="img.image"
+
+            > -->
+
             <div class="imgSlider"[style]="'background-image: url('+img.image+');'" ></div>
+           <!-- </lib-ngx-image-zoom> -->
           </ng-template>
 
         </owl-carousel-o>
@@ -53,7 +60,8 @@
                 <a [routerLink]="['/prodactDetails', product.id, product.name]">
                   <div Class="card">
                     <div class="">
-                      <img alt="Card" [src]="product.images['0'].image" />
+
+                      <img alt="Card" [lazyLoad]="product.images['0'].image" />
                     </div>
                     <div class="card-body">
                       <h3>{{product.name}}</h3>
@@ -67,6 +75,7 @@
               </ng-template>
 
             </owl-carousel-o>
+
           </div>
 
         </div>

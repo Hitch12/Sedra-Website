@@ -1,12 +1,16 @@
 <app-navbar *ngIf="!loading"></app-navbar>
 
+
+<!-- This Page for search :)  -->
 <div class="all-products" *ngIf="!loading">
-  <div class="backGroundImg" style="background-image: url(../../assets/5.jpg);">
+  <div class="backGroundImg" style="background-image: url(assets/5.jpg);">
     <div class="text-center ">
       <h2 class="title">Sedra</h2>
     </div>
   </div>
-
+  <div class="text-center my-5" *ngIf="!thereProducts and !thereCategories and !thereBranches">
+    <img src="../../assets/no-product-found.png" width="300px" alt="" srcset="">
+  </div>
 
 
   <div class="" *ngIf="thereProducts">
@@ -21,7 +25,7 @@
           <a [routerLink]="['/prodactDetails', product.id, product.name]">
             <div Class="card">
               <div class="">
-                <img alt="" class="img-card" [src]="product.images['0'].image" />
+                <img alt="" class="img-card" [lazyLoad]="product.images['0'].image" />
               </div>
               <div class="card-body">
                 <h3>{{product.name}}</h3>
@@ -34,6 +38,7 @@
           </a>
         </div>
       </div>
+
     </div>
   </div>
 
@@ -97,6 +102,9 @@
 
 
 </div>
+
+
+
 <app-loading *ngIf="loading"></app-loading>
 
 

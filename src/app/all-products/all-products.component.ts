@@ -59,8 +59,13 @@ export class AllProductsComponent {
         this.allProducts = this.allProducts.filter(x=>x.name.toLowerCase().includes( value.toLowerCase() ) )
         console.log(this.allProducts)
 
-        if(this.allProducts.length) this.thereProducts = true;
-        else this.thereProducts = false;
+        if(this.allProducts.length)
+        {
+          this.thereProducts = true;
+        }
+        else{
+          this.thereProducts = false;
+        }
 
         this.loading = false;
 
@@ -74,9 +79,13 @@ export class AllProductsComponent {
         this.Categories = this.Categories.filter(x=>x.name.toLowerCase().includes( value.toLowerCase() ) )
         console.log(this.Categories)
 
-        if(this.Categories.length) this.thereCategories = true;
-        else this.thereCategories = false;
-
+        if(this.Categories.length)
+        {
+          this.thereCategories = true;
+        }
+        else{
+          this.thereCategories = false;
+        }
         this.loading = false;
       }
     })
@@ -88,9 +97,13 @@ export class AllProductsComponent {
         this.Branches = this.Branches.filter(x=>x.name.toLowerCase().includes( value.toLowerCase() ) )
         console.log(this.Branches)
 
-        if(this.Branches.length) this.thereBranches = true;
-        else this.thereBranches = false;
-
+        if(this.Branches.length)
+        {
+          this.thereBranches = true;
+        }
+        else{
+          this.thereBranches = false;
+        }
         this.loading = false;
       }
     })

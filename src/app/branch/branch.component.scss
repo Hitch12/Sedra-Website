@@ -109,3 +109,20 @@
 
   }
 }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .gmap_canvas{
+    height: 50vh;
+  }
+  .backGroundImg{
+    min-height: 100vh;
+
+  }
+  .box-info ul{
+    font-size: 20px;
+  }
+  .box-info h2{
+    font-size: 42px;
+
+  }
+}

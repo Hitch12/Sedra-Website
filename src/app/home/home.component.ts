@@ -89,7 +89,7 @@ export class HomeComponent {
         items: 2,
       },
       740: {
-        items: 4,
+        items: 3,
       },
       940: {
         items: 4,
@@ -171,10 +171,10 @@ export class HomeComponent {
         items: 2,
       },
       400: {
-        items: 4,
+        items: 3,
       },
       740: {
-        items: 5,
+        items: 3,
       },
       940: {
         items: 5,
@@ -221,6 +221,7 @@ export class HomeComponent {
   }
 
   ngOnInit(): void {
+    window.scrollTo({top:0 });
 
       this.getCategories();
       this.getBranches();

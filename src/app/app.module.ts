@@ -19,6 +19,9 @@ import { CategoryComponent } from './category/category.component';
 import { BranchComponent } from './branch/branch.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AllProductsComponent } from './all-products/all-products.component';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +45,10 @@ import { AllProductsComponent } from './all-products/all-products.component';
     ReactiveFormsModule,
     FormsModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    LazyLoadImageModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

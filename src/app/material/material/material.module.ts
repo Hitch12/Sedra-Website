@@ -86,6 +86,7 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { NgxImageZoomModule } from 'ngx-image-zoom';
 
 const material:Array<any> = [
   AvatarModule,
@@ -172,7 +173,8 @@ const material:Array<any> = [
   AnimateModule,
   CardModule,
 
-  CarouselModule
+  CarouselModule,
+  NgxImageZoomModule
 ]
 
 @NgModule({

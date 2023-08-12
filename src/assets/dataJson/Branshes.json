@@ -1,0 +1,65 @@
+[
+    {
+    "id": 11,
+    "name": "Ard El Golf",
+    "address": "Sedra - Ard El Golf Branch",
+    "phone": "01065527801",
+    "email": "sd.golf@sedragroup.net",
+    "branchImages": [
+    {
+    "id": 48,
+    "image": "assets/ImgeBranch/480.7998098655945745_TSA_PROGRAMING_.jpg"
+    },
+    {
+    "id": 49,
+    "image": "assets/ImgeBranch/490.4509847692340774_TSA_PROGRAMING_.jpg"
+    },
+    {
+    "id": 50,
+    "image": "assets/ImgeBranch/500.9712802184456555_TSA_PROGRAMING_.jpg"
+    }
+    ]
+    },
+    {
+    "id": 12,
+    "name": "El Tagmoa",
+    "address": "Sedra - El Tagmoa",
+    "phone": "",
+    "email": "sd.tgm@sedragroup.net",
+    "branchImages": [
+    {
+    "id": 51,
+    "image": "assets/ImgeBranch/510.010758332206224464_TSA_PROGRAMING_.jpg"
+    },
+    {
+    "id": 52,
+    "image": "assets/ImgeBranch/520.25222404490608985_TSA_PROGRAMING_.jpg"
+    },
+    {
+    "id": 53,
+    "image": "assets/ImgeBranch/530.20777553051583075_TSA_PROGRAMING_.jpg"
+    }
+    ]
+    },
+    {
+    "id": 13,
+    "name": "North Costa",
+    "address": "Sedra - North Costa",
+    "phone": "",
+    "email": "sd.tgm@sedragroup.net",
+    "branchImages": [
+    {
+    "id": 54,
+    "image": "assets/ImgeBranch/540.56496928614007_TSA_PROGRAMING_.jpg"
+    },
+    {
+    "id": 55,
+    "image": "assets/ImgeBranch/550.6971536461382684_TSA_PROGRAMING_.jpg"
+    },
+    {
+    "id": 56,
+    "image": "assets/ImgeBranch/560.07272741340276534_TSA_PROGRAMING_.jpg"
+    }
+    ]
+    }
+    ]

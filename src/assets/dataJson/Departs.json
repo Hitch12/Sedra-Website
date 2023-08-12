@@ -1,0 +1,747 @@
+[
+    {
+        "id": 7,
+        "name": "Bakary",
+        "descraption": "string",
+        "postarPath": "assets/ImgeDeparts/7198865_1_.jpg",
+        "imageBackground": "assets/ImgeDeparts/7379335_2_.jpg",
+        "prodects": [
+            {
+                "id": 10041,
+                "name": "Bakary",
+                "price": 150,
+                "descraption": "string",
+                "departName": "Bakary",
+                "bestSeller": true,
+                "new": true,
+                "offer": true,
+                "idDepart": 7,
+                "images": [
+                    {
+                        "id": 53,
+                        "image": "assets/ImgeItems/530.7426128600379869_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10042,
+                "name": "Croissant Almond",
+                "price": 32,
+                "descraption": "string",
+                "departName": "Bakary",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 7,
+                "images": [
+                    {
+                        "id": 54,
+                        "image": "assets/ImgeItems/540.4012757226957825_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10043,
+                "name": "Fruit Danish",
+                "price": 12,
+                "descraption": "string",
+                "departName": "Bakary",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 7,
+                "images": [
+                    {
+                        "id": 55,
+                        "image": "assets/ImgeItems/550.9831447593826954_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10044,
+                "name": "Italian Bread",
+                "price": 26,
+                "descraption": "string",
+                "departName": "Bakary",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 7,
+                "images": [
+                    {
+                        "id": 56,
+                        "image": "assets/ImgeItems/560.446909957056298_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Oriental",
+        "descraption": "string",
+        "postarPath": "assets/ImgeDeparts/8303079_1_.jpg",
+        "imageBackground": "assets/ImgeDeparts/8598228_2_.jpg",
+        "prodects": []
+    },
+    {
+        "id": 9,
+        "name": "Catering",
+        "descraption": "string",
+        "postarPath": "assets/ImgeDeparts/9773153_1_.jpg",
+        "imageBackground": "assets/ImgeDeparts/9296819_2_.jpg",
+        "prodects": [
+            {
+                "id": 10045,
+                "name": "Canape",
+                "price": 25,
+                "descraption": "string",
+                "departName": "Catering",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 9,
+                "images": [
+                    {
+                        "id": 57,
+                        "image": "assets/ImgeItems/570.9305947042192227_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10046,
+                "name": "Crepe cake",
+                "price": 849,
+                "descraption": "string",
+                "departName": "Catering",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 9,
+                "images": [
+                    {
+                        "id": 58,
+                        "image": "assets/ImgeItems/580.6737537476097167_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10047,
+                "name": "Fruit Danish",
+                "price": 12,
+                "descraption": "string",
+                "departName": "Catering",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 9,
+                "images": [
+                    {
+                        "id": 59,
+                        "image": "assets/ImgeItems/590.7028805395750537_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10048,
+                "name": "Gateaux Garde Manger",
+                "price": 95,
+                "descraption": "string",
+                "departName": "Catering",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 9,
+                "images": [
+                    {
+                        "id": 60,
+                        "image": "assets/ImgeItems/600.11323165770016907_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10049,
+                "name": "Salamon Sandwich",
+                "price": 95,
+                "descraption": "string",
+                "departName": "Catering",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 9,
+                "images": [
+                    {
+                        "id": 61,
+                        "image": "assets/ImgeItems/610.243926233240369_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10050,
+                "name": "Saumon Fumé Torte",
+                "price": 950,
+                "descraption": "string",
+                "departName": "Catering",
+                "bestSeller": true,
+                "new": true,
+                "offer": true,
+                "idDepart": 9,
+                "images": [
+                    {
+                        "id": 62,
+                        "image": "assets/ImgeItems/620.4096042838411773_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Hot Catering",
+        "descraption": "string",
+        "postarPath": "assets/ImgeDeparts/10469472_1_.jpg",
+        "imageBackground": "assets/ImgeDeparts/1058191_2_.jpg",
+        "prodects": []
+    },
+    {
+        "id": 11,
+        "name": "Ramadan",
+        "descraption": "string",
+        "postarPath": "assets/ImgeDeparts/11250081_1_.jpg",
+        "imageBackground": "assets/ImgeDeparts/1191245_2_.jpg",
+        "prodects": [
+            {
+                "id": 10013,
+                "name": "Biscuit",
+                "price": 349,
+                "descraption": "string",
+                "departName": "Ramadan",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 11,
+                "images": [
+                    {
+                        "id": 25,
+                        "image": "assets/ImgeItems/250.2253727744679188_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10014,
+                "name": "Cough",
+                "price": 399,
+                "descraption": "string",
+                "departName": "Ramadan",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 11,
+                "images": [
+                    {
+                        "id": 26,
+                        "image": "assets/ImgeItems/260.9392740063016398_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10015,
+                "name": "Ghoraiba",
+                "price": 149,
+                "descraption": "string",
+                "departName": "Ramadan",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 11,
+                "images": [
+                    {
+                        "id": 27,
+                        "image": "assets/ImgeItems/270.4507530641417573_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10016,
+                "name": "Kunafa Lotus",
+                "price": 389,
+                "descraption": "string",
+                "departName": "Ramadan",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 11,
+                "images": [
+                    {
+                        "id": 28,
+                        "image": "assets/ImgeItems/280.49414678558553693_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10017,
+                "name": "Kunafa Mango",
+                "price": 149,
+                "descraption": "string",
+                "departName": "Ramadan",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 11,
+                "images": [
+                    {
+                        "id": 29,
+                        "image": "assets/ImgeItems/290.32673766622813116_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10018,
+                "name": "Kunafa Marshmallow",
+                "price": 669,
+                "descraption": "string",
+                "departName": "Ramadan",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 11,
+                "images": [
+                    {
+                        "id": 30,
+                        "image": "assets/ImgeItems/300.5597492661777845_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10019,
+                "name": "Kunafa Oreo",
+                "price": 349,
+                "descraption": "string",
+                "departName": "Ramadan",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 11,
+                "images": [
+                    {
+                        "id": 31,
+                        "image": "assets/ImgeItems/310.4305629107755955_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10020,
+                "name": "Kunafa Tiramisu",
+                "price": 369,
+                "descraption": "string",
+                "departName": "Ramadan",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 11,
+                "images": [
+                    {
+                        "id": 32,
+                        "image": "assets/ImgeItems/320.5728834858682609_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10021,
+                "name": "Maamoul Ajwa",
+                "price": 459,
+                "descraption": "string",
+                "departName": "Ramadan",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 11,
+                "images": [
+                    {
+                        "id": 33,
+                        "image": "assets/ImgeItems/330.3281819129716448_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10022,
+                "name": "petit four",
+                "price": 249,
+                "descraption": "string",
+                "departName": "Ramadan",
+                "bestSeller": false,
+                "new": false,
+                "offer": false,
+                "idDepart": 11,
+                "images": [
+                    {
+                        "id": 34,
+                        "image": "assets/ImgeItems/340.18464419474935212_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Imblage",
+        "descraption": "string",
+        "postarPath": "assets/ImgeDeparts/12338493_1_.jpg",
+        "imageBackground": "assets/ImgeDeparts/12445497_2_.jpg",
+        "prodects": [
+            {
+                "id": 10032,
+                "name": "Imblage",
+                "price": 349,
+                "descraption": "string",
+                "departName": "Imblage",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 12,
+                "images": [
+                    {
+                        "id": 35,
+                        "image": "assets/ImgeItems/350.7525991617132864_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10033,
+                "name": "Imblage",
+                "price": 399,
+                "descraption": "string",
+                "departName": "Imblage",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 12,
+                "images": [
+                    {
+                        "id": 36,
+                        "image": "assets/ImgeItems/360.11828596127409086_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10034,
+                "name": "Imblage",
+                "price": 149,
+                "descraption": "string",
+                "departName": "Imblage",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 12,
+                "images": [
+                    {
+                        "id": 37,
+                        "image": "assets/ImgeItems/370.9666766322544552_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10035,
+                "name": "Imblage",
+                "price": 389,
+                "descraption": "string",
+                "departName": "Imblage",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 12,
+                "images": [
+                    {
+                        "id": 38,
+                        "image": "assets/ImgeItems/380.6667872159176019_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10036,
+                "name": "Imblage",
+                "price": 149,
+                "descraption": "string",
+                "departName": "Imblage",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 12,
+                "images": [
+                    {
+                        "id": 39,
+                        "image": "assets/ImgeItems/390.5177362886274888_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10037,
+                "name": "Imblage",
+                "price": 669,
+                "descraption": "string",
+                "departName": "Imblage",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 12,
+                "images": [
+                    {
+                        "id": 40,
+                        "image": "assets/ImgeItems/400.4730505792655837_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10038,
+                "name": "Imblage",
+                "price": 349,
+                "descraption": "string",
+                "departName": "Imblage",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 12,
+                "images": [
+                    {
+                        "id": 41,
+                        "image": "assets/ImgeItems/410.5294348876669428_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10039,
+                "name": "Imblage",
+                "price": 369,
+                "descraption": "string",
+                "departName": "Imblage",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 12,
+                "images": [
+                    {
+                        "id": 42,
+                        "image": "assets/ImgeItems/420.916355396989585_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10040,
+                "name": "Imblage",
+                "price": 459,
+                "descraption": "string",
+                "departName": "Imblage",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 12,
+                "images": [
+                    {
+                        "id": 43,
+                        "image": "assets/ImgeItems/430.7924255373558459_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Tortes",
+        "descraption": "string",
+        "postarPath": "assets/ImgeDeparts/13168025_1_.jpg",
+        "imageBackground": "assets/ImgeDeparts/13150519_2_.jpg",
+        "prodects": [
+            {
+                "id": 10023,
+                "name": "Strawberry Tart",
+                "price": 349,
+                "descraption": "string",
+                "departName": "Tortes",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 13,
+                "images": [
+                    {
+                        "id": 44,
+                        "image": "assets/ImgeItems/440.5633361683850875_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10024,
+                "name": "Fruits Torte",
+                "price": 399,
+                "descraption": "string",
+                "departName": "Tortes",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 13,
+                "images": [
+                    {
+                        "id": 45,
+                        "image": "assets/ImgeItems/450.040220536927495276_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10025,
+                "name": "Festival Tart",
+                "price": 149,
+                "descraption": "string",
+                "departName": "Tortes",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 13,
+                "images": [
+                    {
+                        "id": 46,
+                        "image": "assets/ImgeItems/460.43696318467738127_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10026,
+                "name": "Roshi",
+                "price": 389,
+                "descraption": "string",
+                "departName": "Tortes",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 13,
+                "images": [
+                    {
+                        "id": 47,
+                        "image": "assets/ImgeItems/470.5470415320443032_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10027,
+                "name": "Tart1",
+                "price": 149,
+                "descraption": "string",
+                "departName": "Tortes",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 13,
+                "images": [
+                    {
+                        "id": 48,
+                        "image": "assets/ImgeItems/480.7261153843628039_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10028,
+                "name": "Red",
+                "price": 669,
+                "descraption": "string",
+                "departName": "Tortes",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 13,
+                "images": [
+                    {
+                        "id": 49,
+                        "image": "assets/ImgeItems/490.613116213718998_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10029,
+                "name": "RiseWithMilk",
+                "price": 349,
+                "descraption": "string",
+                "departName": "Tortes",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 13,
+                "images": [
+                    {
+                        "id": 50,
+                        "image": "assets/ImgeItems/500.2525875438351163_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10030,
+                "name": "Eclair",
+                "price": 369,
+                "descraption": "string",
+                "departName": "Tortes",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 13,
+                "images": [
+                    {
+                        "id": 51,
+                        "image": "assets/ImgeItems/510.25073029207881325_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            },
+            {
+                "id": 10031,
+                "name": "amaly",
+                "price": 459,
+                "descraption": "string",
+                "departName": "Tortes",
+                "bestSeller": true,
+                "new": false,
+                "offer": false,
+                "idDepart": 13,
+                "images": [
+                    {
+                        "id": 52,
+                        "image": "assets/ImgeItems/520.6259781239527554_TSA_PROGRAMING_.jpg"
+                    }
+                ],
+                "ingrains": []
+            }
+        ]
+    }
+]

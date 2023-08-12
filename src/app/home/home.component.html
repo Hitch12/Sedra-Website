@@ -12,13 +12,13 @@
     </div>
     <owl-carousel-o [options]="customOptions" >
       <ng-template carouselSlide id="1">
-        <div class="imgSlider" style="background-image: url(../../assets/cho.jpg);"></div>
+        <div class="imgSlider" style="background-image: url(assets/cho.jpg);"></div>
       </ng-template>
       <ng-template carouselSlide id="2">
-        <div class="imgSlider" style="background-image: url(../../assets/slide3.jpg);"></div>
+        <div class="imgSlider" style="background-image: url(assets/slide3.jpg);"></div>
       </ng-template>
       <ng-template carouselSlide id="3">
-        <div class="imgSlider" style="background-image: url(../../assets/slide2.jpg);"></div>
+        <div class="imgSlider" style="background-image: url(assets/slide2.jpg);"></div>
       </ng-template>
 
     </owl-carousel-o>
@@ -36,22 +36,45 @@
         </div>
         <div class="col-12">
           <owl-carousel-o [options]="BestSellerOptions" class="">
-            <ng-template carouselSlide *ngFor="let product of allProducts">
+              <ng-template carouselSlide *ngFor="let product of allProducts">
               <a [routerLink]="['/prodactDetails', product.id, product.name]">
                 <div Class="card">
-                  <div class="">
-                    <img alt="Card" [src]="product.images['0'].image" priority />
+                  <div class="card-img">
+
+                      <img alt="item-Sedra"  [src]="product.images['0'].image"  />
+
+
+                    </div>
+                    <div class="card-body px-0 ps-3">
+                      <h3>{{product.name}}</h3>
+                      <p class="text-muted">{{product.price}} EG</p>
+                    </div>
+                    <div class="card-footer">
+                      <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                    </div>
                   </div>
-                  <div class="card-body px-0 ps-3">
-                    <h3>{{product.name}}</h3>
-                    <p class="text-muted">{{product.price}} EG</p>
-                  </div>
-                  <div class="card-footer">
-                    <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
-                  </div>
-                </div>
-              </a>
-            </ng-template>
+                </a>
+              </ng-template>
+
+            <!-- Skeleton Loader -->
+<!--
+            <ng-template #elseTemplate>
+              <ng-template carouselSlide *ngFor="let product of  generateFake(5)">
+                  <div Class="card">
+                    <div class="">
+                      <ngx-skeleton-loader [theme]="{ height: '150px', width:'100%'}"></ngx-skeleton-loader>
+                    </div>
+                      <div class="card-body px-0 ps-3">
+                        <ngx-skeleton-loader [theme]="{ width: '90%', height: '10px'}"></ngx-skeleton-loader>
+                        <ngx-skeleton-loader [theme]="{ width: '50px', height: '10px'}"></ngx-skeleton-loader>
+                      </div>
+                      <div class="card-footer">
+                        <p class="d-block mt-1">View Details <i class="fa-solid fa-arrow-right-long"></i></p>
+                      </div>
+                    </div>
+                </ng-template>
+
+              </ng-template> -->
 
           </owl-carousel-o>
         </div>
@@ -87,8 +110,9 @@
 
   <!-- <div class="mid-img" id="mid-img"></div> -->
 
+  <!-- <img src="../../assets/ImgeBranch/480.7998098655945745_TSA_PROGRAMING_.jpg" alt="" srcset=""> -->
 
-  <div class="product" id="product">
+  <div class="product" id="product" >
     <div class="container mb-5">
       <div class="row">
         <div class="col-12">
@@ -96,6 +120,13 @@
             <h2 class="text-uppercase">Our Product</h2>
           </div>
         </div>
+        <!-- <div class="col-12">
+          <div class="">
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+        </div> -->
         <div class="col-12">
           <owl-carousel-o [options]="productOptions">
             <ng-template carouselSlide *ngFor="let product of allProducts">

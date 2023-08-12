@@ -17,6 +17,7 @@ export class CategoryComponent {
   products: Array<any> = []
   allProducts: Array<any> = []
   background:string = ''
+  thereProducts:boolean = false
 
   constructor(private _ActivatedRoute:ActivatedRoute,private _DataService:DataService) {}
 
@@ -28,7 +29,15 @@ export class CategoryComponent {
         this.name=specialDepart.name
         this.products=specialDepart.prodects;
         this.background = specialDepart.imageBackground
-        this.loading = false
+        this.loading = false;
+        if(this.products.length)
+        {
+          this.thereProducts = true;
+        }
+        else{
+          this.thereProducts = false;
+          
+        }
       }
     })
   }
